@@ -3,22 +3,30 @@
   <head>
     <title>Hello HTML</title>
     <link rel="icon" type="image/x-icon" href="https://cdn.iconscout.com/icon/premium/png-512-thumb/books-1452536-1227460.png?f=webp&w=512">
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <style>
       body {
         font-family:Arial, Helvetica, sans-serif;
         background-color: whitesmoke;
         margin: 0;
+        padding: 0;
       }
 
-      nav, main > h1, main > p, footer {
+      /* FIX NAV BAR */
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      main > h1, main > p, footer {
         text-align: center;
       }
 
-      nav > ul {
+      nav > ul, ol {
         list-style-type: none;
-        margin: 0;
-        padding: 0;
+        padding: 0; 
         overflow: hidden;
       }
 
@@ -47,18 +55,42 @@
         font-weight: 600;
       }
 
-      #welcome-message {
-        font-size: 20px;
-        font-style: italic;
+      main {
+        margin: 0;
+        padding: 0;
       }
 
-      #books-section {
-        margin-left: 20%;
-        margin-right: 20%;
+      h1 {
+        font-size: 120px;
+      }
+
+      h1, h2 {
+        margin: 0;
+      }
+
+      #home {
+        color: white;
+        margin: 0;
+        padding: 10%;
+        height: 100vh;
+        background-image: url("https://images.unsplash.com/photo-1460602594182-8568137446ce?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+      }
+
+      #welcome-message {
+        font-size: 36px;
+        color: wheat;
+        font-style: italic;
+        padding-top: 20px;
+      }
+
+      #catalog {
+        margin: 0;
+        padding-top: 40px;
       }
 
       .book {
-        padding-bottom: 2%;
+        margin: auto 20%;
+        padding-bottom: 40px;
       }
 
       .book-description {
@@ -66,35 +98,45 @@
         padding: 10px;
       }
 
-      .header-container, .footer-container {
+      #navbar, .footer-container {
         background-color: white;
-        padding: 20px;
+        padding: 10px 20px 10px;
+      }
+
+      .footer-container {
+        padding: 100px;
+        font-size: 40px;
+      }
+      
+      #contact-us {
+        text-decoration: underline;
+        text-decoration-style: dotted;
       }
 
       footer img {
-        height: 20px;
+        height: 40px;
       }
     </style>
   </head>
 
   <body>
-    <div class="header-container">
-      <nav id="navbar">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#catalog">Catalog</a></li>
-          <li><a href="#contact-us">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#catalog">Catalog</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+      </ul>
+    </nav>
 
     <main>
-      <h1>Hi and welcome!</h1>
-      <p id="welcome-message">
-        Explore timeless classics, modern tales, and endless adventures on our website. Happy reading!
-      </p>
+      <div id="home">
+        <h1>Hi and welcome!</h1>
+        <p id="welcome-message">
+          Explore timeless classics, modern tales, and endless adventures on our website. Happy reading!
+        </p>
+      </div>
 
-      <ol id="books-section">
+      <ol id="catalog">
         <li class="book">
           <h2><strong>The Kite Runner</strong></h2>
           <h3>by <i>Khaled Hosseini</i></h3>
@@ -174,4 +216,3 @@
     </div>
   </body>
 </html>
-
