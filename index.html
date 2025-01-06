@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello HTML</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.iconscout.com/icon/premium/png-512-thumb/books-1452536-1227460.png?f=webp&w=512">
+  
+    <style>
+      body {
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: whitesmoke;
+        margin: 0;
+      }
+
+      nav, main > h1, main > p, footer {
+        text-align: center;
+      }
+
+      nav > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      nav li {
+        float: left;
+      }
+
+      a {
+        text-decoration: none;
+        padding-left: 4px;
+        padding-right: 10px;
+      }
+
+      a:link, a:visited, a:active {
+        color: black;
+        font-weight: bold;
+      }
+
+      a:hover {
+        color: goldenrod;
+      }
+
+      .published-date {
+        padding-top: 10px;
+        font-style: oblique;
+        font-weight: 600;
+      }
+
+      #welcome-message {
+        font-size: 20px;
+        font-style: italic;
+      }
+
+      #books-section {
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+
+      .book {
+        padding-bottom: 2%;
+      }
+
+      .book-description {
+        border: 2px solid black;
+        padding: 10px;
+      }
+
+      .header-container, .footer-container {
+        background-color: white;
+        padding: 20px;
+      }
+
+      footer img {
+        height: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header-container">
+      <nav id="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#catalog">Catalog</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <h1>Hi and welcome!</h1>
+      <p id="welcome-message">
+        Explore timeless classics, modern tales, and endless adventures on our website. Happy reading!
+      </p>
+
+      <ol id="books-section">
+        <li class="book">
+          <h2><strong>The Kite Runner</strong></h2>
+          <h3>by <i>Khaled Hosseini</i></h3>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbfF3LVeCH_wKycujSlmrGIb30TK3fmCJzkQ&s" alt="The Kite Runner">
+          <div class="published-date">First published 29 May 2003</div>
+          <br>
+          <details>
+            <summary>BOOK DESCRIPTION</summary>
+            <p class="book-description">
+              1970s Afghanistan: Twelve-year-old Amir is desperate to win the local kite-fighting tournament and his loyal friend Hassan promises to help him. But neither of the boys can foresee what would happen to Hassan that afternoon, an event that is to shatter their lives. After the Russians invade and the family is forced to flee to America, Amir realises that one day he must return to an Afghanistan under Taliban rule to find the one thing that his new world cannot grant him: redemption.
+            </p>
+          </details>
+        </li>
+
+        <li class="book">
+          <h2><strong>Tuesdays with Morrie</strong></h2>
+          <h3>by <i>Mitch Albom</i></h3>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR09yNNlLlGMWp0nr7NBnfO45QGhfGVwGY7lw&s" alt="Tuesdays with Morrie book cover">
+          <div class="published-date">First published 18 Aug 1997</div>
+          <br>
+          <details>
+            <summary>BOOK DESCRIPTION</summary>
+            <p class="book-description">
+              Maybe it was a grandparent, or a teacher or a colleague. Someone older, patient and wise, who understood you when you were young and searching, and gave you sound advice to help you make your way through it. For Mitch Albom, that person was Morrie Schwartz, his college professor from nearly twenty years ago.
+  
+              Maybe, like Mitch, you lost track of this mentor as you made your way, and the insights faded. Wouldn't you like to see that person again, ask the bigger questions that still haunt you?
+              
+              Mitch Albom had that second chance. He rediscovered Morrie in the last months of the older man's life. Knowing he was dying of ALS - or motor neurone disease - Mitch visited Morrie in his study every Tuesday, just as they used to back in college. Their rekindled relationship turned into one final 'class': lessons in how to live.
+            </p>
+          </details>
+        </li>
+
+        <li class="book">
+          <h2><strong>The Last Lecture</strong></h2>
+          <h3>by <i>Randy Pausch</i></h3>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaZeWno2Se72q4O5ybdt1Jw4EFDLcACGgOPg&s" alt="The Last Lecture book cover">
+          <div class="published-date">First published 8 Apr 2008 </div>
+          <br>
+          <details>
+            <summary>BOOK DESCRIPTION</summary>
+            <p class="book-description">
+              A lot of professors give talks titled 'The Last Lecture'. Professors are asked to consider their demise and to ruminate on what matters most to them: What wisdom would we impart to the world if we knew it was our last chance? If we had to vanish tomorrow, what would we want as our legacy?
+  
+              When Randy Pausch, a computer science professor at Carnegie Mellon, was asked to give such a lecture, he didn't have to imagine it as his last, since he had recently been diagnosed with terminal cancer. But the lecture he gave, 'Really Achieving Your Childhood Dreams', wasn't about dying. It was about the importance of overcoming obstacles, of enabling the dreams of others, of seizing every moment (because time is all you have and you may find one day that you have less than you think). It was a summation of everything Randy had come to believe. It was about living.
+              
+              In this book, Randy Pausch has combined the humour, inspiration, and intelligence that made his lecture such a phenomenon and given it an indelible form. It is a book that will be shared for generations to come.
+            </p>
+          <details>
+          </li>
+      </ol>
+    </main>
+      
+    <div class="footer-container">
+      <footer id="footer">
+        <div id="contact-us"><strong>Connect with me</strong></div>
+          <br>
+          <a href="mailto:megha.verma@g10x.com" target="_blank">
+            <img 
+              src="https://cdn.iconscout.com/icon/premium/png-256-thumb/email-1772428-1508324.png?f=webp&w=256" 
+              alt="Email Icon"
+            >
+          </a>
+          <a href="https://www.linkedin.com/in/meghaaverma" target="_blank">
+            <img 
+              src="https://cdn.iconscout.com/icon/free/png-512/free-linkedin-icon-download-in-svg-png-gif-file-formats--logo-business-social-media-ios-apps-and-settings-pack-user-interface-icons-1570216.png?f=webp&w=512" 
+              alt="LinkedIn Icon"
+            >
+          </a>
+          <a href="https://github.com/meghavx/" target="_blank">
+            <img 
+              src="https://cdn.iconscout.com/icon/free/png-512/free-github-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-2496133.png?f=webp&w=512" 
+              alt="GitHub Icon"
+            >
+          </a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
+
