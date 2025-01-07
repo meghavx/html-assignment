@@ -23,9 +23,14 @@
         width: 100%;
       }
 
-      main > h1, main > p, footer {text-align: center;}
+      main {
+        margin: 0;
+        padding: 0;
+      }
+      
+      main > h1, main > p, footer, cite {text-align: center;}
 
-      nav > ul, ol {
+      nav > ul, ol, cite ul {
         list-style-type: none;
         padding: 0; 
         overflow: hidden;
@@ -55,14 +60,16 @@
         font-weight: 600;
       }
 
-      main {
-        margin: 0;
-        padding: 0;
-      }
-
       h1 {font-size: 120px;}
 
       h1, h2 {margin: 0;}
+
+      #navbar, 
+      .footer-container {
+        background-color: white;
+        padding: 10px 20px 10px;
+        color: black;
+      }
 
       #home {
         color: lightskyblue;
@@ -95,16 +102,6 @@
         border: 2px solid wheat;
       }
 
-      .book-description {
-        border-radius: 10px;
-        background-color: wheat;
-        color: black;
-        padding: 40px;
-        font-size: 20px;
-        font-style: italic;
-        text-align: left;
-      }
-
       .book-title, 
       summary {
         font-weight: 900;
@@ -122,19 +119,26 @@
       }
       .author-name a:link, 
       .author-name a:visited, 
-      .author-name a:active {
+      .author-name a:active, 
+      cite a:link,
+      cite a:visited,
+      cite a:active {
         color: wheat;
       }
 
-      .author-name a:hover {
+      .author-name a:hover,
+      cite a:hover {
         color: pink;
       }
 
-      #navbar, 
-      .footer-container {
-        background-color: white;
-        padding: 10px 20px 10px;
+      .book-description {
+        border-radius: 10px;
+        background-color: wheat;
         color: black;
+        padding: 40px;
+        font-size: 20px;
+        font-style: italic;
+        text-align: left;
       }
 
       .footer-container {
@@ -142,12 +146,18 @@
         font-size: 40px;
       }
       
-      #contact-us {
+      #contact-us, cite a {
         text-decoration: underline;
         text-decoration-style: dotted;
       }
 
       footer img {height: 40px;}
+
+      cite {
+        font-size: small;
+        color: whitesmoke;
+        padding: 10px;
+      }
     </style>
   </head>
 
@@ -323,30 +333,39 @@
       </ol>
     </main>
       
-    <div class="footer-container">
-      <footer id="footer">
-        <div id="contact-us"><strong>Connect with me</strong></div>
-          <br>
-          <a href="mailto:megha.verma@g10x.com" target="_blank">
-            <img 
-              src="https://cdn.iconscout.com/icon/premium/png-256-thumb/email-1772428-1508324.png?f=webp&w=256" 
-              alt="Email Icon"
-            >
-          </a>
-          <a href="https://www.linkedin.com/in/meghaaverma" target="_blank">
-            <img 
-              src="https://cdn.iconscout.com/icon/free/png-512/free-linkedin-icon-download-in-svg-png-gif-file-formats--logo-business-social-media-ios-apps-and-settings-pack-user-interface-icons-1570216.png?f=webp&w=512" 
-              alt="LinkedIn Icon"
-            >
-          </a>
-          <a href="https://github.com/meghavx/" target="_blank">
-            <img 
-              src="https://cdn.iconscout.com/icon/free/png-512/free-github-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-2496133.png?f=webp&w=512" 
-              alt="GitHub Icon"
-            >
-          </a>
-        </p>
-      </footer>
-    </div>
+    <footer id="footer" class="footer-container">
+      <div id="contact-us"><strong>Connect with me</strong></div>
+      <br>
+      <a href="mailto:megha.verma@g10x.com" target="_blank">
+        <img 
+          src="https://cdn.iconscout.com/icon/premium/png-256-thumb/email-1772428-1508324.png?f=webp&w=256" 
+          alt="Email Icon"
+        >
+      </a>
+      <a href="https://www.linkedin.com/in/meghaaverma" target="_blank">
+        <img 
+          src="https://cdn.iconscout.com/icon/free/png-512/free-linkedin-icon-download-in-svg-png-gif-file-formats--logo-business-social-media-ios-apps-and-settings-pack-user-interface-icons-1570216.png?f=webp&w=512" 
+          alt="LinkedIn Icon"
+        >
+      </a>
+      <a href="https://github.com/meghavx/" target="_blank">
+        <img 
+          src="https://cdn.iconscout.com/icon/free/png-512/free-github-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-2496133.png?f=webp&w=512" 
+          alt="GitHub Icon"
+        >
+      </a>
+    </footer>
+    
+    <cite id="citations">
+      <ul>
+        <li>
+          This webpage uses books-related data sourced from<a href="https://www.goodreads.com" target="_blank">Goodreads.</a>All rights to the data belong to Goodreads.
+        </li>
+
+        <li>
+          The background image is a freely usable image sourced from<a href="https://unsplash.com/" target="_blank">Unsplash.</a>
+        </li>
+      </ul>
+    </cite>
   </body>
 </html>
